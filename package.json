@@ -1,0 +1,28 @@
+{
+  "name": "namastereact",
+  "version": "1.0.0",
+  "description": "This is react learning.",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SidJ11/react-prac.git"
+  },
+  "keywords": [],
+  "author": "Sid Joshi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SidJ11/react-prac/issues"
+  },
+  "homepage": "https://github.com/SidJ11/react-prac#readme",
+  "devDependencies": {
+    "parcel": "^2.8.3",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
