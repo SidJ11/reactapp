@@ -20,7 +20,7 @@
 57D:\JS prac\NamasteReact\node_modules\posthtml-render\dist133253226800712503 1
 75D:\JS prac\NamasteReact\node_modules\msgpackr\dist\index-no-eval.min.js.map133253226899597032 0
 61D:\JS prac\NamasteReact\node_modules\abortcontroller-polyfill133253226854574645 1
-28D:\JS prac\NamasteReact\dist133268324689593255 1
+28D:\JS prac\NamasteReact\dist133295605580738495 1
 59D:\JS prac\NamasteReact\node_modules\@parcel\optimizer-svgo133253226815279498 1
 68D:\JS prac\NamasteReact\node_modules\@parcel\workers\src\cpuCount.js133253226851871184 0
 47D:\JS prac\NamasteReact\node_modules\source-map133253226859692450 1
@@ -36,7 +36,7 @@
 75D:\JS prac\NamasteReact\node_modules\terser\node_modules\commander\index.js133253226777293713 0
 34D:\JS prac\NamasteReact\.gitignore133258384141238649 0
 74D:\JS prac\NamasteReact\node_modules\@jridgewell\sourcemap-codec\README.md133253226795502009 0
-30D:\JS prac\NamasteReact\App.js133268324659886621 0
+30D:\JS prac\NamasteReact\App.js133295605577800790 0
 65D:\JS prac\NamasteReact\node_modules\css-select\lib\attributes.js133253226785175413 0
 56D:\JS prac\NamasteReact\node_modules\parcel\package.json133253226852031195 0
 56D:\JS prac\NamasteReact\node_modules\lmdb\dict\dict2.txt133253227001856660 0
@@ -729,7 +729,7 @@
 89D:\JS prac\NamasteReact\node_modules\@parcel\runtime-js\src\helpers\browser\css-loader.js133253226859922462 0
 78D:\JS prac\NamasteReact\node_modules\react-dom\cjs\react-dom.production.min.js133256717925825068 0
 71D:\JS prac\NamasteReact\node_modules\css-tree\lib\syntax\node\String.js133253226990766723 0
-46D:\JS prac\NamasteReact\dist\index.7826abd7.js133268324688093236 0
+46D:\JS prac\NamasteReact\dist\index.7826abd7.js133295605580538484 0
 65D:\JS prac\NamasteReact\node_modules\css-tree\lib\lexer\search.js133253226988366720 0
 60D:\JS prac\NamasteReact\node_modules\source-map\package.json133253226770164219 0
 74D:\JS prac\NamasteReact\node_modules\@parcel\runtime-js\src\helpers\worker133253226900627063 1
@@ -2018,7 +2018,7 @@
 55D:\JS prac\NamasteReact\node_modules\lmdb\dict\dict.txt133253227001696595 0
 67D:\JS prac\NamasteReact\node_modules\commander\package-support.json133253226785495370 0
 67D:\JS prac\NamasteReact\node_modules\lmdb\dependencies\lmdb-data-v1133253226770454210 1
-47D:\JS prac\NamasteReact\dist\index.9e4c6fd2.css133268324686113193 0
+47D:\JS prac\NamasteReact\dist\index.9e4c6fd2.css133295601141615631 0
 81D:\JS prac\NamasteReact\node_modules\lmdb\dependencies\v8\v8-fast-api-calls-v16.h133253226992016750 0
 77D:\JS prac\NamasteReact\node_modules\lmdb\dependencies\v8\v8-fast-api-calls.h133253226992336736 0
 62D:\JS prac\NamasteReact\node_modules\@parcel\core\src\requests133253227013130330 1
@@ -4370,7 +4370,7 @@
 52D:\JS prac\NamasteReact\node_modules\.bin\terser.ps1133253227164250920 0
 46D:\JS prac\NamasteReact\dist\index.751ecaab.js133257941743646692 0
 50D:\JS prac\NamasteReact\dist\index.751ecaab.js.map133257941743866683 0
-50D:\JS prac\NamasteReact\dist\index.7826abd7.js.map133268324689443260 0
-51D:\JS prac\NamasteReact\dist\index.9e4c6fd2.css.map133268324686373199 0
-39D:\JS prac\NamasteReact\dist\index.html133268324689573257 0
+50D:\JS prac\NamasteReact\dist\index.7826abd7.js.map133295605580698452 0
+51D:\JS prac\NamasteReact\dist\index.9e4c6fd2.css.map133295601141745646 0
+39D:\JS prac\NamasteReact\dist\index.html133295601143205640 0
 53D:\JS prac\NamasteReact\dist\NamasteReact.3464ddca.js133256718562155490 0
