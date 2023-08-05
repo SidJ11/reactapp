@@ -2931,15 +2931,36 @@ var _reactDefault = parcelHelpers.interopDefault(_react);
 var _client = require("react-dom/client");
 var _clientDefault = parcelHelpers.interopDefault(_client);
 //const heading = React.createElement("h1", {id:"heading"}, "Hello from React");
+//React Element
 const jsxHeading = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
     children: "This is coming with jsx"
 }, void 0, false, {
     fileName: "App.js",
-    lineNumber: 6,
+    lineNumber: 7,
     columnNumber: 20
 }, undefined);
+//Functional Component which returns React Element (JSX)
+const HeadingComponent = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                children: "This heading comes from functional component"
+            }, void 0, false, {
+                fileName: "App.js",
+                lineNumber: 11,
+                columnNumber: 7
+            }, undefined),
+            jsxHeading
+        ]
+    }, void 0, true);
+_c = HeadingComponent;
 const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
-root.render(jsxHeading);
+root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(HeadingComponent, {}, void 0, false, {
+    fileName: "App.js",
+    lineNumber: 18,
+    columnNumber: 13
+}, undefined));
+var _c;
+$RefreshReg$(_c, "HeadingComponent");
 
   $parcel$ReactRefreshHelpers$c1db.postlude(module);
 } finally {

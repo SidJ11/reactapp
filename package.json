@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SidJ11/react-prac.git"
+    "url": "git+https://github.com/SidJ11/reactapp.git"
   },
   "keywords": [],
   "author": "Sid Joshi",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/SidJ11/react-prac/issues"
+    "url": "https://github.com/SidJ11/reactapp/issues"
   },
-  "homepage": "https://github.com/SidJ11/react-prac#readme",
+  "homepage": "https://github.com/SidJ11/reactapp#readme",
   "devDependencies": {
     "parcel": "^2.8.3",
     "process": "^0.11.10"
