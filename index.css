@@ -1,3 +1,31 @@
-#heading{
-    color: blueviolet;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800&family=Poppins:ital,wght@0,200;0,300;0,400;0,600;0,800;1,300&display=swap');
+
+html *{
+    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 3px solid indianred;
+    border-radius: 5px;
+}
+
+.logo>:first-child{
+    width: 90px;
+    border-radius: 5px;
+    padding-top: 5px;
+}
+
+.nav-items > ul {
+    display: flex;
+    list-style-type: none;
+    font-size: 18px;
+}
+
+.nav-items > ul > li{
+    padding: 20px;
+    margin: auto;
 }
