@@ -1,5 +1,31 @@
-#heading {
-  color: #8a2be2;
+@import "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800&family=Poppins:ital,wght@0,200;0,300;0,400;0,600;0,800;1,300&display=swap";
+html * {
+  font-family: Poppins, sans-serif;
+}
+
+.header {
+  border: 3px solid #cd5c5c;
+  border-radius: 5px;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.logo > :first-child {
+  width: 90px;
+  border-radius: 5px;
+  padding-top: 5px;
+}
+
+.nav-items > ul {
+  font-size: 18px;
+  list-style-type: none;
+  display: flex;
+}
+
+.nav-items > ul > li {
+  margin: auto;
+  padding: 20px;
 }
 
 /*# sourceMappingURL=index.9e4c6fd2.css.map */
