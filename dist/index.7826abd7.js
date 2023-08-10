@@ -3003,30 +3003,187 @@ const Header = ()=>{
     }, void 0, false);
 };
 _c = Header;
-const AppLayout = ()=>{
+const ResCard = ({ name , rating  })=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "app",
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Header, {}, void 0, false, {
-            fileName: "App.js",
-            lineNumber: 30,
-            columnNumber: 13
-        }, undefined)
-    }, void 0, false, {
+        className: "res-card",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "res-img-container",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                    className: "res-img",
+                    src: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/ee4f041cd8611dccc19f4267783ab5ea"
+                }, void 0, false, {
+                    fileName: "App.js",
+                    lineNumber: 30,
+                    columnNumber: 48
+                }, undefined)
+            }, void 0, false, {
+                fileName: "App.js",
+                lineNumber: 30,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "res-details",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "res-name",
+                        children: name
+                    }, void 0, false, {
+                        fileName: "App.js",
+                        lineNumber: 32,
+                        columnNumber: 17
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "res-rating",
+                        children: [
+                            rating,
+                            "⭐"
+                        ]
+                    }, void 0, true, {
+                        fileName: "App.js",
+                        lineNumber: 33,
+                        columnNumber: 17
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "res-cuisines",
+                        children: "Some cusinies go here"
+                    }, void 0, false, {
+                        fileName: "App.js",
+                        lineNumber: 34,
+                        columnNumber: 17
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "res-location",
+                        children: "Location"
+                    }, void 0, false, {
+                        fileName: "App.js",
+                        lineNumber: 35,
+                        columnNumber: 17
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "App.js",
+                lineNumber: 31,
+                columnNumber: 13
+            }, undefined)
+        ]
+    }, void 0, true, {
         fileName: "App.js",
         lineNumber: 29,
         columnNumber: 9
     }, undefined);
 };
-_c1 = AppLayout;
+_c1 = ResCard;
+const Body = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "body",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "search",
+                children: "Search Restaurants"
+            }, void 0, false, {
+                fileName: "App.js",
+                lineNumber: 44,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "res-container",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ResCard, {
+                        name: "FoodPoint",
+                        rating: "4"
+                    }, void 0, false, {
+                        fileName: "App.js",
+                        lineNumber: 46,
+                        columnNumber: 17
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ResCard, {
+                        name: "FoodPoint",
+                        rating: "4"
+                    }, void 0, false, {
+                        fileName: "App.js",
+                        lineNumber: 47,
+                        columnNumber: 17
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ResCard, {
+                        name: "FoodPoint",
+                        rating: "4"
+                    }, void 0, false, {
+                        fileName: "App.js",
+                        lineNumber: 48,
+                        columnNumber: 17
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ResCard, {
+                        name: "FoodPoint",
+                        rating: "4"
+                    }, void 0, false, {
+                        fileName: "App.js",
+                        lineNumber: 49,
+                        columnNumber: 17
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ResCard, {
+                        name: "FoodPoint",
+                        rating: "4"
+                    }, void 0, false, {
+                        fileName: "App.js",
+                        lineNumber: 50,
+                        columnNumber: 17
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ResCard, {
+                        name: "FoodPoint",
+                        rating: "4"
+                    }, void 0, false, {
+                        fileName: "App.js",
+                        lineNumber: 51,
+                        columnNumber: 17
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "App.js",
+                lineNumber: 45,
+                columnNumber: 13
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "App.js",
+        lineNumber: 43,
+        columnNumber: 9
+    }, undefined);
+};
+_c2 = Body;
+const AppLayout = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "app",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Header, {}, void 0, false, {
+                fileName: "App.js",
+                lineNumber: 60,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Body, {}, void 0, false, {
+                fileName: "App.js",
+                lineNumber: 61,
+                columnNumber: 13
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "App.js",
+        lineNumber: 59,
+        columnNumber: 9
+    }, undefined);
+};
+_c3 = AppLayout;
 const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
 root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AppLayout, {}, void 0, false, {
     fileName: "App.js",
-    lineNumber: 36,
+    lineNumber: 67,
     columnNumber: 13
 }, undefined));
-var _c, _c1;
+var _c, _c1, _c2, _c3;
 $RefreshReg$(_c, "Header");
-$RefreshReg$(_c1, "AppLayout");
+$RefreshReg$(_c1, "ResCard");
+$RefreshReg$(_c2, "Body");
+$RefreshReg$(_c3, "AppLayout");
 
   $parcel$ReactRefreshHelpers$c1db.postlude(module);
 } finally {
