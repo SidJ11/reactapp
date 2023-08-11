@@ -51,7 +51,6 @@ html * {
 
 .res-card {
   width: 273px;
-  height: 280px;
   z-index: 0;
   border-radius: 10px;
   margin: 10px;
@@ -66,7 +65,7 @@ html * {
 }
 
 .res-details {
-  padding: 0 10px;
+  padding: 5px 10px 0;
 }
 
 .res-img-container {
@@ -83,11 +82,16 @@ html * {
   border-radius: 10px;
 }
 
+.res-namerating {
+  justify-content: space-between;
+  display: flex;
+}
+
 .res-name {
   font-size: larger;
 }
 
-.res-cuisines, .res-location {
+.res-cuisines, .res-costfortwo, .res-location {
   color: gray;
 }
 
