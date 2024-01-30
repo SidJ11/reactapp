@@ -2,40 +2,36 @@ import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom";
 import Shimmer from "./Shimmer";
 import { MENU_API } from "../utils/constants";
+import useResMenu from "../utils/useResmenu";
 
 const ResMenu = () => {
-    const [resInfo, setResInfo] = useState(null)
+    // const [resInfo, setResInfo] = useState(null)
 
     //Read Restaurant ID from URL
     const {resId} = useParams();
+    const resInfo = useResMenu(resId) //fetching data using custom hook
 
-    useEffect(()=> {
-        fetchMenu();
-    },[]);
+    // useEffect(()=> {
+    //     fetchMenu();
+    // },[]);
 
   //45607 - Domino's id
   //150561 - Yummy Burgers
   //83637- Another Burger
-  const fetchMenu = async () => {
-    try {
-      const response = await fetch(MENU_API+resId); // Use your MENU_API constant here
-      if (!response.ok) {
-        throw new Error("Failed to fetch menu data");
-      }
-      const json = await response.json();
-      setResInfo(json);
-    } catch (error) {
-      console.error("Error fetching menu data:", error);
-    }
-  };
 
   // const fetchMenu = async () => {
-  //   const data = await fetch(MENU_API+resId)
-  //   const json = await data.json();
-  //   console.log(json)
-  //   setResInfo(json)
-  //   console.log(resInfo)
-  // }
+  //   try {
+  //     const response = await fetch(MENU_API+resId); // Use your MENU_API constant here
+  //     if (!response.ok) {
+  //       throw new Error("Failed to fetch menu data");
+  //     }
+  //     const json = await response.json();
+  //     setResInfo(json);
+  //   } catch (error) {
+  //     console.error("Error fetching menu data:", error);
+  //   }
+  // };
+
   if (resInfo == null) return <Shimmer/>
   const {name, cuisines, costForTwoMessage} = resInfo?.data?.cards[0]?.card?.card?.info;
 

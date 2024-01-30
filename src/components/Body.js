@@ -12,12 +12,11 @@ const Body = () => {
   useEffect(() => {
     fetchData();
   }, []);
+
   const fetchData = async () => {
-    const data = await fetch(
-      "https://www.swiggy.com/dapi/restaurants/list/v5?lat=26.9124336&lng=75.7872709&collection=83660&tags=layout_CCS_Coffee&sortBy=&filters=&type=rcv2&offset=0&page_type=null"
-    );
+    const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=26.9124336&lng=75.7872709&collection=83660&tags=layout_CCS_Coffee&sortBy=&filters=&type=rcv2&offset=0&page_type=null");
     const json = await data.json();
-    console.log(json )
+    console.log(json)
     json.data.cards.splice(0, 3);
     setListRes(json?.data?.cards);
     setFilteredRes(json?.data?.cards);
