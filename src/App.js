@@ -7,6 +7,7 @@ import Contact from "./components/Contact";
 import Error from "./components/Error";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import ResMenu from "./components/ResMenu";
+import Instamart from "./components/Instamart";
 
 const AppLayout = () => {
     return (
@@ -25,6 +26,10 @@ const appRouter = createBrowserRouter([
             {
                 path: "/",
                 element: <Body />
+            },
+            {
+                path: "/instamart",
+                element: <Instamart />
             },
             {
                 path: "/about",

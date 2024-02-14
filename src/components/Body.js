@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import resList from "../utils/resList";
 import ResCard from "./ResCard";
 import Shimmer from "./Shimmer";
+import useOnlineStatus from "../utils/useOnlineStatus";
 
 const Body = () => {
   const [listRes, setListRes] = useState([]);
@@ -22,6 +23,12 @@ const Body = () => {
     setFilteredRes(json?.data?.cards);
     console.log(listRes);
   };
+
+  const onlineStatus = useOnlineStatus();
+
+  if (onlineStatus == false){
+    return(<h1>OOPS ! Looks like you are offline, please check your internet connection and refresh the page.</h1>)
+  }
 
   return listRes.length == 0 ? (
     <Shimmer />
