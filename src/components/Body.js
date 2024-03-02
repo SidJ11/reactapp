@@ -33,25 +33,25 @@ const Body = () => {
   return listRes.length == 0 ? (
     <Shimmer />
   ) : (
-    <div className="body">
-      <div className="search">
+    <div className="m-4 p-4">
+      <div className="search flex">
         <input
+          className="border-2 rounded-lg"
           type="text"
-          className="search-box"
           placeholder="Search restaurants.."
           value={searchVal}
           onChange={(e) => {
             setSearchVal(e.target.value);
           }}
         />
-        <button className="search-btn" onClick={() => {
+        <button className="px-4 py-[1.5px] border rounded-lg bg-amber-400" onClick={() => {
             console.log(searchVal);
             const searchList = listRes.filter((res)=>res.card.card.info.name.toLowerCase().includes(searchVal.toLowerCase()))
             setFilteredRes(searchList)
             }}>
           Search
         </button>
-        <div className="filter">
+        <div className="px-4 py-[1.5px] border rounded-lg bg-amber-400">
           <button
             className="filter-btn"
             onClick={() => {
@@ -66,7 +66,7 @@ const Body = () => {
         </div>
       </div>
 
-      <div className="res-container">
+      <div className="flex flex-wrap justify-between">
         {filteredRes.map((restaurant) => (
           <Link key={restaurant.card.card.info.id} to={"restaurants/"+ restaurant.card.card.info.id}><ResCard resData={restaurant} /></Link>
         ))}

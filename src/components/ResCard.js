@@ -4,10 +4,10 @@ const ResCard = (props) =>{
     const {resData} = props;
     const {cloudinaryImageId, name, avgRating, cuisines, costForTwo, locality} = resData?.card.card.info
     return(
-        <div className="res-card">
-            <div className="res-img-container"><img className="res-img" src={IMG_CDN+cloudinaryImageId} /></div>
+        <div className="p-4 max-w-72 max-h-72 flex flex-col">
+            <div className="res-img-container"><img className="rounded-lg" src={IMG_CDN+cloudinaryImageId} /></div>
             <div className="res-details">
-                <div className="res-namerating"> <div className="res-name">{name}</div>
+                <div className="flex justify-between py-2"> <div className="font-semibold text-lg">{name}</div>
                 <div className="res-rating">{avgRating}⭐</div></div>
                 <div className="res-cuisines">{cuisines.join(", ")}</div>
                 <div className="res-costfortwo">{costForTwo}</div>

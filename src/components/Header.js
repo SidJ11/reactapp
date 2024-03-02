@@ -9,20 +9,20 @@ const Header = () =>{
 
     return(
         <>
-        <div className="header">
-            
-            <div className="logo"><img src={logo} />
+        <div className="flex justify-between shadow-lg m-2">
+            <div className="logo-container">
+                <div className="w-24"><img src={logo} /></div>
             </div>
           
-            <div className="nav-items">
-                <ul>
-                    <li>Online Status: {onlineStatus ? "🟢" : "🔴"}</li>
-                    <li><Link to="/">Home</Link></li>
-                    <li><Link to="/instamart">Instamart</Link></li>
-                    <li><Link to="/about">About Us</Link></li>
-                    <li><Link to="/contact">Contact Us</Link></li>
-                    <li>Cart</li>
-                    <li><button className="header-btn" onClick={()=> btnName=="Login"? setBtnName("Logout") : setBtnName("Login")}>{btnName}</button></li>
+            <div className="nav-items flex items-center">
+                <ul className="flex p-4 m-4">
+                    <li className="px-4">Online Status: {onlineStatus ? "🟢" : "🔴"}</li>
+                    <li className="px-4"><Link to="/">Home</Link></li>
+                    <li className="px-4"><Link to="/instamart">Instamart</Link></li>
+                    <li className="px-4"><Link to="/about">About Us</Link></li>
+                    <li className="px-4"><Link to="/contact">Contact Us</Link></li>
+                    <li className="px-4">Cart</li>
+                    <li className="px-4"><button className="header-btn" onClick={()=> btnName=="Login"? setBtnName("Logout") : setBtnName("Login")}>{btnName}</button></li>
                 </ul>
             </div> 
         
