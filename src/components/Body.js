@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import resList from "../utils/resList";
-import ResCard from "./ResCard";
+import ResCard, { withPromotedLabel } from "./ResCard";
 import Shimmer from "./Shimmer";
 import useOnlineStatus from "../utils/useOnlineStatus";
 
@@ -9,6 +9,8 @@ const Body = () => {
   const [listRes, setListRes] = useState([]);
   const [filteredRes, setFilteredRes] = useState([]);
   const [searchVal, setSearchVal] = useState("");
+  
+  const ResCardPromoted = withPromotedLabel(ResCard);
 
   useEffect(() => {
     fetchData();
@@ -68,7 +70,9 @@ const Body = () => {
 
       <div className="flex flex-wrap justify-between">
         {filteredRes.map((restaurant) => (
-          <Link key={restaurant.card.card.info.id} to={"restaurants/"+ restaurant.card.card.info.id}><ResCard resData={restaurant} /></Link>
+          <Link key={restaurant.card.card.info.id} to={"restaurants/"+ restaurant.card.card.info.id}>
+            {restaurant.card.card.info.promoted ? <ResCardPromoted resData={restaurant}/> : <ResCard resData={restaurant} />}
+            </Link>
         ))}
       </div>
     </div>
