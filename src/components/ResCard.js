@@ -17,11 +17,12 @@ const ResCard = (props) =>{
     )
 }
 
+//Higher order component
 export const withPromotedLabel = (ResCard) => {
     return(props) =>{
         return (
             <div>
-                <label>Promoted</label>
+                <label className="absolute bg-black text-white m-2 p-2 rounded-lg">Promoted</label>
                 <ResCard {...props}/>
             </div>
         )

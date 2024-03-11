@@ -10,6 +10,7 @@ const Body = () => {
   const [filteredRes, setFilteredRes] = useState([]);
   const [searchVal, setSearchVal] = useState("");
   
+  //variable for HOC of card component, passing basic card into it
   const ResCardPromoted = withPromotedLabel(ResCard);
 
   useEffect(() => {
@@ -36,7 +37,7 @@ const Body = () => {
     <Shimmer />
   ) : (
     <div className="m-4 p-4">
-      <div className="search flex">
+      <div className="search flex items-center justify-center">
         <input
           className="border-2 rounded-lg"
           type="text"
@@ -68,7 +69,7 @@ const Body = () => {
         </div>
       </div>
 
-      <div className="flex flex-wrap justify-between">
+      <div className="flex flex-wrap justify-between mx-40 my-6">
         {filteredRes.map((restaurant) => (
           <Link key={restaurant.card.card.info.id} to={"restaurants/"+ restaurant.card.card.info.id}>
             {restaurant.card.card.info.promoted ? <ResCardPromoted resData={restaurant}/> : <ResCard resData={restaurant} />}

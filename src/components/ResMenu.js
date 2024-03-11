@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import Shimmer from "./Shimmer";
 import { MENU_API } from "../utils/constants";
 import useResMenu from "../utils/useResmenu";
+import ResCategory from "./ResCategory";
 
 const ResMenu = () => {
     // const [resInfo, setResInfo] = useState(null)
@@ -37,15 +38,38 @@ const ResMenu = () => {
 
   const {itemCards} = resInfo?.data?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards[2]?.card?.card;
   console.log(itemCards)
+  console.log(resInfo?.data?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR.cards)
+
+  const categories = resInfo?.data?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR.cards.filter((c)=> c?.card?.card?.["@type"] == "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory")
+  // console.log(categories)
+
   return (
-    <div className="menu">
-        <h1>{name}</h1>
-        <h2>{cuisines.join(", ")}</h2>
-        <h3>{costForTwoMessage}</h3>
-        <ul>
+    <div>
+      <div className="flex flex-col justify-center items-center">
+        <h1 className="font-bold my-6 text-2xl">{name}</h1>
+        <h2 className="font-semibold text-xl">{cuisines.join(", ")}</h2>
+        <h3 className="font-semibold text-lg">{costForTwoMessage}</h3>
+      </div>
+
+      {/* Categories */}
+      <div className="my-10">
+      {categories.map((cat) => <ResCategory data={cat?.card?.card}/>)}
+      </div>
+
+
+        {/* <ul>
             {itemCards.map(x => <li key={x?.card?.info?.id}>{x?.card?.info?.name} - Rs.{x?.card?.info?.price/100}</li>
            )}
         </ul>
+        <br></br>
+        {categories.map((item)=> {
+          return (
+          <div>
+            <ul>{item?.card?.card?.title}</ul>
+            {item?.card?.card?.itemCards?.card?.info?.name}
+            {console.log(item?.card?.card?.itemCards?.card?.info?.name)}
+          </div>
+          )})} */}
     </div>
   )
 }
